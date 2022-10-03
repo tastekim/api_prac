@@ -83,6 +83,7 @@ router.delete("/posts/:_id", async (req, res) => {
 router.put("/posts/:_id", async (req, res) => {
     try {
         const {postId} = req.params;
+        console.log({postId});
         const updatePost = req.body;
         const post = await Posts.findOne({postId}); //수정할 게시글이 존재하는지 확인
         if (post.password === updatePost.password) {
