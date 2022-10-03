@@ -25,14 +25,12 @@ router.get("/posts", async (req, res) => {
 // 게시글 작성
 router.post("/posts", async (req, res) => {
     try {
-        const {title, user, password, content} = req.body;
-        const createdAt = new Date().toLocaleString(); // 날짜는 서버에서 실시간 날짜 받아와서 넣어주기
+        const {title, user, password, content} = req.body;// 날짜는 서버에서 실시간 날짜 받아와서 넣어주기
         await Posts.create({
             title    : title,
             user     : user,
             password : password,
             content  : content,
-            createdAt: createdAt
         });
         res.send("posting success !");
     } catch (err) {
