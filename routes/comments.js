@@ -12,6 +12,7 @@ router.get("/comments/:postId", async (req, res) => {
         console.log(commentsAll);
         const [...comments] = commentsAll.map((comment) => {
             return {
+                _id      : comment._id,
                 user     : comment.user,
                 createdAt: comment.createdAt,
                 comment  : comment.comment

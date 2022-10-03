@@ -9,6 +9,7 @@ router.get("/posts", async (req, res) => {
         const postsAll = await Posts.find().sort({createdAt: -1}); // 내림차순으로 최신순으로 정렬
         const [...posts] = postsAll.map((post) => {
             return {
+                _id      : post._id,
                 title    : post.title,
                 user     : post.user,
                 createdAt: post.createdAt
@@ -36,7 +37,8 @@ router.post("/posts", async (req, res) => {
         res.send("posting success !");
     } catch (err) {
         res.json({success: false, errorMessage: err});
-    };
+    }
+    ;
 });
 
 
