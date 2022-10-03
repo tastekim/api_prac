@@ -62,7 +62,7 @@ router.get("/posts/:_id", async (req, res) => {
 
 
 //게시글 삭제
-// params 게시글 _id 를 받고 body에서 user와 password를 받아서 특정 게시글 삭제.
+// params 게시글 _id 를 받고 body에서 password를 받아서 특정 게시글 삭제.
 router.delete("/posts/:_id", async (req, res) => {
     try {
         const {postId} = req.params;

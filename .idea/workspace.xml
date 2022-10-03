@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0084f335-143c-407d-b5b0-648b8886de00" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +42,7 @@
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.JavaScript&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -82,7 +82,8 @@
       <workItem from="1664737568981" duration="963000" />
       <workItem from="1664761928837" duration="22130000" />
       <workItem from="1664792567367" duration="1585000" />
-      <workItem from="1664796485104" duration="3156000" />
+      <workItem from="1664796485104" duration="5318000" />
+      <workItem from="1664805547602" duration="402000" />
     </task>
     <servers />
   </component>

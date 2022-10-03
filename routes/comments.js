@@ -4,7 +4,7 @@ const Comments = require("../schemas/comments");
 const Posts = require("../schemas/posts");
 
 // 특정 게시글의 comments 조회
-router.get("/comments/:postid", async (req, res) => {
+router.get("/comments/:postId", async (req, res) => {
     try {
         const {postId} = req.params;
         console.log(postId);
