@@ -36,8 +36,7 @@ router.post("/posts", async (req, res) => {
         res.send("posting success !");
     } catch (err) {
         res.json({success: false, errorMessage: err});
-    }
-    ;
+    };
 });
 
 

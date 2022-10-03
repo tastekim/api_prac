@@ -14,6 +14,6 @@ app.get("/", (req, res) => {
 app.use(express.json());
 app.use([postsRouter, commentsRouter]);
 
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log("서버 연결 success");
 });
