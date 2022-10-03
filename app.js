@@ -8,7 +8,7 @@ connect();
 
 app.get("/", (req, res) => {
     // api 사용 방법 설명 띄우기
-    res.send("로컬 3001번 연결 완료 !");
+    res.send("서버 연결 완료 !");
 });
 
 app.use(express.json());
