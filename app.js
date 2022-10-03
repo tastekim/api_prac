@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
         "댓글 작성" : "/comments/:_postId -> 위와 같은 post의 id 값으로 특정 게시글에 댓글 달기, body 에 user, comment 입력",
         "댓글 수정" : "/comments/:_id -> comment의 유니크값 id로 조회, body에 comment 입력",
         "댓글 삭제" : "/comments/:_id -> comment의 유니크값 id로 조회, 찾아서 삭제"
-        );
+    });
 });
 
 app.use(express.json());
