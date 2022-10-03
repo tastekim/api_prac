@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const commentSchemas = new mongoose.Schema({
-    postId : {
+    postId   : {
         type    : String,
         required: true
     },
-    user   : {
+    user     : {
         type    : String,
         required: true,
     },
@@ -13,7 +13,7 @@ const commentSchemas = new mongoose.Schema({
         type    : Date,
         required: false
     },
-    comment: {
+    comment  : {
         type    : String,
         required: true
     }

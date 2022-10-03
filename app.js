@@ -11,6 +11,7 @@ app.get("/", (req, res) => {
     res.send("로컬 3000번 연결 완료 !");
 });
 
+app.use(express.json());
 app.use([postsRouter, commentsRouter]);
 
 app.listen(3000, () => {

@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const Posts = require("../schemas/posts");
-const Comments = require("../schemas/comments");
 
 
 // 전체 게시글 조회
@@ -36,7 +35,7 @@ router.post("/posts", async (req, res) => {
         });
         res.send("posting success !");
     } catch (err) {
-        res.status(400).json({success: false, errorMessage: err});
+        res.json({success: false, errorMessage: err});
     }
     ;
 });

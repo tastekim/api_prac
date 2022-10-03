@@ -20,7 +20,8 @@ router.get("/comments/:postid", async (req, res) => {
         res.json(comments);
     } catch (err) {
         res.status(400).json({success: false, errorMessage: err});
-    };
+    }
+    ;
 });
 router.post("/comments/:postId", async (req, res) => {
     try {
