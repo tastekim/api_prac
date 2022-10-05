@@ -87,7 +87,7 @@ router.put("/posts/:_id", async (req, res) => {
         const updatePost = req.body;
         const post = await Posts.findOne({postId}); //수정할 게시글이 존재하는지 확인
         if (post.password === updatePost.password) {
-            await Posts.updateOne({postId}, {$set: {content: updatePost.content}});
+            await Posts.updateOne({$set: {content: updatePost.content}});
             res.send("수정 완료 !");
         } else {
             res.send("password 를 다시 확인해주세요.");

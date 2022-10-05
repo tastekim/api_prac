@@ -42,7 +42,7 @@ router.put("/comments/:_id", async (req, res) => {
         const commentPut = req.body;
         const comment = await Comments.findOne({_id}); //수정할 댓글이 존재하는지 확인
         if (commentPut.comment !== "") {
-            await Comments.updateOne({_id}, {$set: {comment: commentPut.comment}});
+            await Comments.updateOne( {$set: {comment: commentPut.comment}});
             res.send("수정 완료 !");
         } else if (comment === null) {
             res.send("수정할 comment가 없습니다.");
